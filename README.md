@@ -4,6 +4,8 @@ This document describes the full Electrum Protocol. This protocol is used over a
 
 ## Methods
 
+All methods defined for the Electrum Protocol. The "(array only)" means that the parameter can only be sent in a parameter array, at the position of the index for that parameter.
+
 ### `blockchain.block.get_header`
 
 | Introduced | Deprecated | Removed |
@@ -12,9 +14,9 @@ This document describes the full Electrum Protocol. This protocol is used over a
 
 #### Parameters
 
-| Index (Array) | Name (Object) | Description |
-| - | - | - |
-| `0` | `height` (array only) | Height of block. |
+| Index (Array) | Name (Object) | Description | Introduced |
+| - | - | - | - |
+| `0` | `height` (array only) | Height of block. | See method. |
 
 ### `blockchain.transaction.get_merkle`
 
@@ -24,17 +26,35 @@ This document describes the full Electrum Protocol. This protocol is used over a
 
 #### Parameters
 
-| Index (Array) | Name (Object) | Description |
-| - | - | - |
-| `0` | `tx_hash` (array only) | Hash of transaction. |
+| Index (Array) | Name (Object) | Description | Introduced |
+| - | - | - | - |
+| `0` | `tx_hash` (array only) | Hash of transaction. | See method. |
 | `1` | ... | ... |
+
+### `server.version`
+
+| Introduced | Deprecated | Removed |
+| - | - | - |
+| Unversioned | N/A | N/A |
+
+#### Parameters
+
+| Index (Array) | Name (Object) | Description | Introduced |
+| - | - | - | - |
+| `0` | `version` (array only) | Version of the client. (Likely not the protocol version.) | See method. |
+| `1` | `protocol_version` (array only) | Version of the protocol. Must be a string until at least 1.0. | ? |
+
+#### Result
+
+ - For "Unversioned" and `0.1`, the result can be the string `ok`.
+ - For `0.1` to `1.0`, the result can be a string with the protocol version code.
 
 ## Versions
 
-| Version |
-| - |
-| Unversioned |
-|	`0.1`	|
+| Version | Description |
+| - | - |
+| Unversioned | The early stage that there was no concept of protocol version yet. Unversioned servers can send `ok` when receiving a `server.version` message. |
+|	`0.1`	| The first versioned protocol version. Servers with this version can send `ok` when receiving a `server.version` message, but they also can send `0.1`. |
 |	`0.2`	|
 |	`0.3`	|
 |	`0.4`	|
