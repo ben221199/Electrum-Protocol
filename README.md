@@ -41,8 +41,8 @@ All methods defined for the Electrum Protocol. The "(array only)" means that the
 
 | Index (Array) | Name (Object) | Description | Introduced |
 | - | - | - | - |
-| `0` | `version` (array only) | Version of the client. (Likely not the protocol version.) | See method. |
-| `1` | `protocol_version` (array only) | Version of the protocol. Must be a string until at least 1.0. | `0.5` or `0.6` |
+| `0` | `version` (array only) | Version of the client. (Likely not the protocol version, or not anymore since 0.5/0.6.) Required until 0.9/0.10. Optional in 1.0. | See method. |
+| `1` | `protocol_version` (array only) | Version of the protocol. Optional. Must be a string (or float) until at least 1.0. | `0.5` or `0.6` |
 
 #### Result
 
