@@ -6,6 +6,30 @@ This document describes the full Electrum Protocol. This protocol is used over a
 
 All methods defined for the Electrum Protocol. The "(array only)" means that the parameter can only be sent in a parameter array, at the position of the index for that parameter.
 
+### `address.get_history`
+
+### `address.subscribe`
+
+---
+
+### `blockchain.address.get_balance`
+
+### `blockchain.address.get_history`
+
+### `blockchain.address.get_history2`
+
+### `blockchain.address.get_mempool`
+
+### `blockchain.address.get_path`
+
+### `blockchain.address.listunspent`
+
+### `blockchain.address.subscribe`
+
+### `blockchain.address.subscribe2`
+
+### `blockchain.address.unsubscribe`
+
 ### `blockchain.block.get_header`
 
 | Introduced | Deprecated | Removed |
@@ -17,6 +41,16 @@ All methods defined for the Electrum Protocol. The "(array only)" means that the
 | Index (Array) | Name (Object) | Description | Introduced |
 | - | - | - | - |
 | `0` | `height` (array only) | Height of block. | See method. |
+
+### `blockchain.block.get_chunk`
+
+### `blockchain.block.get_header`
+
+### `blockchain.numblocks.subscribe`
+
+### `blockchain.transaction.broadcast`
+
+### `blockchain.transaction.get`
 
 ### `blockchain.transaction.get_merkle`
 
@@ -30,6 +64,38 @@ All methods defined for the Electrum Protocol. The "(array only)" means that the
 | - | - | - | - |
 | `0` | `tx_hash` (array only) | Hash of transaction. | See method. |
 | `1` | ... | ... |
+
+---
+
+### `blockchain2.address.get_history`
+
+### `blockchain2.address.subscribe`
+
+### `blockchain2.address.subscribe2`
+
+### `blockchain2.block.get_chunk`
+
+### `blockchain2.block.get_header`
+
+### `blockchain2.numblocks.subscribe`
+
+### `blockchain2.transaction.broadcast`
+
+### `blockchain2.transaction.get`
+
+### `blockchain2.transaction.get_merkle`
+
+---
+
+### `client.version`
+
+Likely renamed to `server.version` before versioning.
+
+---
+
+### `numblocks.subscribe`
+
+LIkely renamed to `blockchain.numblocks.subscribe` before versioning.
 
 ---
 
@@ -223,6 +289,8 @@ A string confirming the server will be stopped.
 
  - For "Unversioned" and `0.1`, the result can be the string `ok`.
  - For `0.1` to `1.0`, the result can be a string with the protocol version code.
+
+### `transaction.broadcast`
 
 ## Versions
 
