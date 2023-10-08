@@ -31,6 +31,72 @@ All methods defined for the Electrum Protocol. The "(array only)" means that the
 | `0` | `tx_hash` (array only) | Hash of transaction. | See method. |
 | `1` | ... | ... |
 
+### `server.banner`
+
+| Introduced | Deprecated | Removed |
+| - | - | - |
+| Unversioned | N/A | N/A |
+
+### `server.cache`
+
+| Introduced | Deprecated | Removed |
+| - | - | - |
+| Unversioned | N/A | N/A |
+
+### `server.debug`
+
+| Introduced | Deprecated | Removed |
+| - | - | - |
+| `0.8` or `0.9` | N/A | N/A |
+
+### `server.donation_address`
+
+| Introduced | Deprecated | Removed |
+| - | - | - |
+| `0.9` or `0.10` | N/A | N/A |
+
+### `server.getpid`
+
+| Introduced | Deprecated | Removed |
+| - | - | - |
+| `0.9` or `0.10` | N/A | N/A |
+
+### `server.heapy`
+
+| Introduced | Deprecated | Removed |
+| - | - | - |
+| `0.8` | `0.8` | `0.8` and `0.9` |
+
+### `server.info`
+
+| Introduced | Deprecated | Removed |
+| - | - | - |
+| Unversioned | N/A | N/A |
+
+### `server.load`
+
+| Introduced | Deprecated | Removed |
+| - | - | - |
+| Unversioned | N/A | N/A |
+
+### `server.peers`
+
+| Introduced | Deprecated | Removed |
+| - | - | - |
+| ? | N/A | N/A |
+
+### `server.peers.subscribe`
+
+| Introduced | Deprecated | Removed |
+| - | - | - |
+| Unversioned | N/A | N/A |
+
+### `server.stop`
+
+| Introduced | Deprecated | Removed |
+| - | - | - |
+| Unversioned | N/A | N/A |
+
 ### `server.version`
 
 | Introduced | Deprecated | Removed |
