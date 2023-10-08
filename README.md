@@ -58,13 +58,69 @@ All methods defined for the Electrum Protocol. The "(array only)" means that the
 | - | - | - | - |
 | `0` | `height` (array only) | Height of block. | See method. |
 
+### `blockchain.block.header`
+
+| Introduced | Deprecated | Removed |
+| - | - | - |
+| `1.3` | N/A | N/A |
+
+### `blockchain.block.header`
+
+| Introduced | Deprecated | Removed |
+| - | - | - |
+| `1.2` | N/A | N/A |
+
 ### `blockchain.estimatefee`
+
+| Introduced | Deprecated | Removed |
+| - | - | - |
+| ? | `1.4.2` | N/A |
 
 ### `blockchain.headers.subscribe`
 
 ### `blockchain.numblocks.subscribe`
 
 ### `blockchain.relayfee`
+
+| Introduced | Deprecated | Removed |
+| - | - | - |
+| ? | `1.4.2` | N/A |
+
+### `blockchain.scripthash.get_balance`
+
+| Introduced | Deprecated | Removed |
+| - | - | - |
+| `1.1` | N/A | N/A |
+
+### `blockchain.scripthash.get_history`
+
+| Introduced | Deprecated | Removed |
+| - | - | - |
+| `1.1` | N/A | N/A |
+
+### `blockchain.scripthash.get_mempool`
+
+| Introduced | Deprecated | Removed |
+| - | - | - |
+| `1.1` | N/A | N/A |
+
+### `blockchain.scripthash.listunspent`
+
+| Introduced | Deprecated | Removed |
+| - | - | - |
+| `1.1` | N/A | N/A |
+
+### `blockchain.scripthash.subscribe`
+
+| Introduced | Deprecated | Removed |
+| - | - | - |
+| `1.1` | N/A | N/A |
+
+### `blockchain.scripthash.unsubscribe`
+
+| Introduced | Deprecated | Removed |
+| - | - | - |
+| `1.4.2` | N/A | N/A |
 
 ### `blockchain.transaction.broadcast`
 
@@ -82,6 +138,14 @@ All methods defined for the Electrum Protocol. The "(array only)" means that the
 | - | - | - | - |
 | `0` | `tx_hash` (array only) | Hash of transaction. | See method. |
 | `1` | ... | ... |
+
+### `blockchain.transaction.get_tsc_merkle`
+
+### `blockchain.transaction.id_from_pos`
+
+| Introduced | Deprecated | Removed |
+| - | - | - |
+| `1.4` | N/A | N/A |
 
 ### `blockchain.utxo.get_address`
 
@@ -129,11 +193,39 @@ All methods defined for the Electrum Protocol. The "(array only)" means that the
 
 ---
 
+### `mempool.get_fee_histogram`
+
+| Introduced | Deprecated | Removed |
+| - | - | - |
+| `1.2` | `1.4.2` | N/A |
+
+---
+
 ### `client.version`
 
 Likely renamed to `server.version` before versioning.
 
  - **Removed:** Yes, not available in ElectrumX.
+
+---
+
+### `masternode.announce.broadcast`
+
+| Introduced | Deprecated | Removed |
+| - | - | - |
+| ? | N/A | N/A |
+
+### `masternode.subscribe`
+
+| Introduced | Deprecated | Removed |
+| - | - | - |
+| ? | N/A | N/A |
+
+### `masternode.list`
+
+| Introduced | Deprecated | Removed |
+| - | - | - |
+| ? | N/A | N/A |
 
 ---
 
@@ -144,6 +236,27 @@ Likely renamed to `blockchain.numblocks.subscribe` before versioning.
  - **Removed:** Yes, not available in ElectrumX.
 
 ---
+
+### `protx.diff`
+
+| Introduced | Deprecated | Removed |
+| - | - | - |
+| ? | N/A | N/A |
+
+### `protx.info`
+
+| Introduced | Deprecated | Removed |
+| - | - | - |
+| ? | N/A | N/A |
+
+---
+
+### `server.add_peer`
+
+| Introduced | Deprecated | Removed |
+| - | - | - |
+| `1.1` | N/A | N/A |
+
 
 ### `server.banner`
 
@@ -203,6 +316,12 @@ A string, the result value of the evalutated expression.
 #### Result
 
 A string with an address of donation.
+
+### `server.features`
+
+| Introduced | Deprecated | Removed |
+| - | - | - |
+| ? | N/A | N/A |
 
 ### `server.getpid`
 
@@ -301,6 +420,12 @@ An array with peers. Each array item is also an array, with the first element an
  - `p` (Pruning) - Indicates the pruning limit: `p10000`
  - `t` (TCP) - Indicates that the peer supports a TCP connection: `t` (default port 50001) or `t1234`.
  - `s` (SSL/TLS) - Indicates that the peer supports a SSL/TLS connection: `s` (default port 50002) or `s4321`.
+
+### `server.ping`
+
+| Introduced | Deprecated | Removed |
+| - | - | - |
+| `1.2` | N/A | N/A |
 
 ### `server.stop`
 
