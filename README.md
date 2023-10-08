@@ -31,11 +31,21 @@ All methods defined for the Electrum Protocol. The "(array only)" means that the
 | `0` | `tx_hash` (array only) | Hash of transaction. | See method. |
 | `1` | ... | ... |
 
+---
+
 ### `server.banner`
 
 | Introduced | Deprecated | Removed |
 | - | - | - |
 | Unversioned | N/A | N/A |
+
+#### Parameters
+
+None
+
+#### Result
+
+A string, with a banner sentence of the server.
 
 ### `server.cache`
 
@@ -43,11 +53,32 @@ All methods defined for the Electrum Protocol. The "(array only)" means that the
 | - | - | - |
 | Unversioned | N/A | N/A |
 
+#### Parameters
+
+None
+
+#### Result
+
+A integer.
+
 ### `server.debug`
 
 | Introduced | Deprecated | Removed |
 | - | - | - |
 | `0.8` or `0.9` | N/A | N/A |
+
+Renamed from `server.heapy`.
+
+#### Parameters
+
+| Index (Array) | Name (Object) | Description | Introduced |
+| - | - | - | - |
+| `0` | `password` (array only) | Password of server admin. Optional if there is none. | See method. |
+| `1` | `s` | Expression to be evalutated. Optional. | See method. |
+
+#### Result
+
+A string, the result value of the evalutated expression.
 
 ### `server.donation_address`
 
@@ -55,11 +86,15 @@ All methods defined for the Electrum Protocol. The "(array only)" means that the
 | - | - | - |
 | `0.9` or `0.10` | N/A | N/A |
 
+TODO
+
 ### `server.getpid`
 
 | Introduced | Deprecated | Removed |
 | - | - | - |
 | `0.9` or `0.10` | N/A | N/A |
+
+TODO
 
 ### `server.heapy`
 
@@ -67,11 +102,26 @@ All methods defined for the Electrum Protocol. The "(array only)" means that the
 | - | - | - |
 | `0.8` | `0.8` | `0.8` and `0.9` |
 
+Renamed to `server.debug`.
+
+#### Parameters
+
+| Index (Array) | Name (Object) | Description | Introduced |
+| - | - | - | - |
+| `0` | `password` (array only) | Password of server admin. Optional if there is none. | See method. |
+| `1` | `s` | Expression to be evalutated. Optional. | See method. |
+
+#### Result
+
+A string, the result value of the evalutated expression.
+
 ### `server.info`
 
 | Introduced | Deprecated | Removed |
 | - | - | - |
 | Unversioned | N/A | N/A |
+
+TODO
 
 ### `server.load`
 
@@ -79,11 +129,21 @@ All methods defined for the Electrum Protocol. The "(array only)" means that the
 | - | - | - |
 | Unversioned | N/A | N/A |
 
+#### Parameters
+
+None
+
+#### Result
+
+An integer, some approximate of a queue size.
+
 ### `server.peers`
 
 | Introduced | Deprecated | Removed |
 | - | - | - |
 | ? | N/A | N/A |
+
+TODO
 
 ### `server.peers.subscribe`
 
@@ -91,11 +151,15 @@ All methods defined for the Electrum Protocol. The "(array only)" means that the
 | - | - | - |
 | Unversioned | N/A | N/A |
 
+TODO
+
 ### `server.stop`
 
 | Introduced | Deprecated | Removed |
 | - | - | - |
 | Unversioned | N/A | N/A |
+
+TODO
 
 ### `server.version`
 
