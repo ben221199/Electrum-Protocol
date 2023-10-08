@@ -176,7 +176,19 @@ TODO
 | - | - | - |
 | Unversioned | N/A | N/A |
 
-TODO
+It is not a subscription, but just a method to get peers.
+
+#### Parameters
+
+None
+
+#### Result
+
+An array with peers. Each array item is also an array, with the first element an IP address, the second element a hostname and later, also a third element with additional information. This third element is an array, where the first character identifies the information:
+ - `v` (Version) - Indicates the version of the peer: `v1.0`
+ - `p` (Pruning) - Indicates the pruning limit: `p10000`
+ - `t` (TCP) - Indicates that the peer supports a TCP connection: `t` (default port 50001) or `t1234`.
+ - `s` (SSL/TLS) - Indicates that the peer supports a SSL/TLS connection: `s` (default port 50002) or `s4321`.
 
 ### `server.stop`
 
