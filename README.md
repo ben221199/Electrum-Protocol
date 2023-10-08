@@ -18,13 +18,25 @@ All methods defined for the Electrum Protocol. The "(array only)" means that the
 
 ### `blockchain.address.get_balance`
 
+| Introduced | Deprecated | Removed |
+| - | - | - |
+| ? | `1.2` | `1.3` |
+
 ### `blockchain.address.get_history`
+
+| Introduced | Deprecated | Removed |
+| - | - | - |
+| ? | `1.2` | `1.3` |
 
 ### `blockchain.address.get_history2`
 
  - **Removed:** Yes, not available in ElectrumX.
 
 ### `blockchain.address.get_mempool`
+
+| Introduced | Deprecated | Removed |
+| - | - | - |
+| ? | `1.2` | `1.3` |
 
 ### `blockchain.address.get_path`
 
@@ -34,7 +46,15 @@ All methods defined for the Electrum Protocol. The "(array only)" means that the
 
 ### `blockchain.address.listunspent`
 
+| Introduced | Deprecated | Removed |
+| - | - | - |
+| ? | `1.2` | `1.3` |
+
 ### `blockchain.address.subscribe`
+
+| Introduced | Deprecated | Removed |
+| - | - | - |
+| ? | `1.2` | `1.3` |
 
 ### `blockchain.address.subscribe2`
 
@@ -46,11 +66,15 @@ All methods defined for the Electrum Protocol. The "(array only)" means that the
 
 ### `blockchain.block.get_chunk`
 
+| Introduced | Deprecated | Removed |
+| - | - | - |
+| ? | `1.2` | `1.4` |
+
 ### `blockchain.block.get_header`
 
 | Introduced | Deprecated | Removed |
 | - | - | - |
-| `0.2` | N/A | N/A |
+| `0.2` | `1.3` | `1.4` |
 
 #### Parameters
 
@@ -64,7 +88,7 @@ All methods defined for the Electrum Protocol. The "(array only)" means that the
 | - | - | - |
 | `1.3` | N/A | N/A |
 
-### `blockchain.block.header`
+### `blockchain.block.headers`
 
 | Introduced | Deprecated | Removed |
 | - | - | - |
@@ -79,6 +103,10 @@ All methods defined for the Electrum Protocol. The "(array only)" means that the
 ### `blockchain.headers.subscribe`
 
 ### `blockchain.numblocks.subscribe`
+
+| Introduced | Deprecated | Removed |
+| - | - | - |
+| ? | `1.0` | `1.1` |
 
 ### `blockchain.relayfee`
 
@@ -120,7 +148,7 @@ All methods defined for the Electrum Protocol. The "(array only)" means that the
 
 | Introduced | Deprecated | Removed |
 | - | - | - |
-| `1.4.2` | N/A | N/A |
+| (`1.4.1` or) `1.4.2` | N/A | N/A |
 
 ### `blockchain.transaction.broadcast`
 
@@ -148,6 +176,10 @@ All methods defined for the Electrum Protocol. The "(array only)" means that the
 | `1.4` | N/A | N/A |
 
 ### `blockchain.utxo.get_address`
+
+| Introduced | Deprecated | Removed |
+| - | - | - |
+| ? | `1.0` | `1.1` |
 
 ---
 
@@ -193,19 +225,19 @@ All methods defined for the Electrum Protocol. The "(array only)" means that the
 
 ---
 
-### `mempool.get_fee_histogram`
-
-| Introduced | Deprecated | Removed |
-| - | - | - |
-| `1.2` | `1.4.2` | N/A |
-
----
-
 ### `client.version`
 
 Likely renamed to `server.version` before versioning.
 
  - **Removed:** Yes, not available in ElectrumX.
+
+---
+
+### `mempool.get_fee_histogram`
+
+| Introduced | Deprecated | Removed |
+| - | - | - |
+| `1.2` | `1.4.2` | N/A |
 
 ---
 
@@ -321,7 +353,7 @@ A string with an address of donation.
 
 | Introduced | Deprecated | Removed |
 | - | - | - |
-| ? | N/A | N/A |
+| `1.1` | N/A | N/A |
 
 ### `server.getpid`
 
