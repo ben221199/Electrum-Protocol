@@ -131,7 +131,22 @@ A string, the result value of the evalutated expression.
 | - | - | - |
 | Unversioned | N/A | N/A |
 
-TODO
+#### Parameters
+
+| Index (Array) | Name (Object) | Description | Introduced |
+| - | - | - | - |
+| `0` | `password` (array only) | Password of server admin. Optional if there is none. | See method. |
+
+#### Result
+
+An array of all sessions that the server is currently serving. In the unversioned beginning it was only a string containing the session address, but even before 0.1 this was already changed to an object with the following properties:
+ - `address`
+ - `version`
+ - `subscriptions`
+
+And later also:
+ - `time`
+ - `name`
 
 ### `server.load`
 
