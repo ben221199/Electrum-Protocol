@@ -8,7 +8,11 @@ All methods defined for the Electrum Protocol. The "(array only)" means that the
 
 ### `address.get_history`
 
+ - **Removed:** Yes, not available in ElectrumX.
+
 ### `address.subscribe`
+
+ - **Removed:** Yes, not available in ElectrumX.
 
 ---
 
@@ -18,9 +22,13 @@ All methods defined for the Electrum Protocol. The "(array only)" means that the
 
 ### `blockchain.address.get_history2`
 
+ - **Removed:** Yes, not available in ElectrumX.
+
 ### `blockchain.address.get_mempool`
 
 ### `blockchain.address.get_path`
+
+ - **Removed:** Yes, not available in ElectrumX.
 
 ### `blockchain.address.get_proof`
 
@@ -30,7 +38,11 @@ All methods defined for the Electrum Protocol. The "(array only)" means that the
 
 ### `blockchain.address.subscribe2`
 
+ - **Removed:** Yes, not available in ElectrumX.
+
 ### `blockchain.address.unsubscribe`
+
+ - **Removed:** Yes, not available in ElectrumX.
 
 ### `blockchain.block.get_chunk`
 
@@ -77,23 +89,43 @@ All methods defined for the Electrum Protocol. The "(array only)" means that the
 
 ### `blockchain2.address.get_history`
 
+ - **Removed:** Yes, not available in ElectrumX.
+
 ### `blockchain2.address.subscribe`
+
+ - **Removed:** Yes, not available in ElectrumX.
 
 ### `blockchain2.address.subscribe2`
 
+ - **Removed:** Yes, not available in ElectrumX.
+
 ### `blockchain2.block.get_chunk`
+
+ - **Removed:** Yes, not available in ElectrumX.
 
 ### `blockchain2.block.get_header`
 
+ - **Removed:** Yes, not available in ElectrumX.
+
 ### `blockchain2.headers.subscribe`
+
+ - **Removed:** Yes, not available in ElectrumX.
 
 ### `blockchain2.numblocks.subscribe`
 
+ - **Removed:** Yes, not available in ElectrumX.
+
 ### `blockchain2.transaction.broadcast`
+
+ - **Removed:** Yes, not available in ElectrumX.
 
 ### `blockchain2.transaction.get`
 
+ - **Removed:** Yes, not available in ElectrumX.
+
 ### `blockchain2.transaction.get_merkle`
+
+ - **Removed:** Yes, not available in ElectrumX.
 
 ---
 
@@ -101,11 +133,15 @@ All methods defined for the Electrum Protocol. The "(array only)" means that the
 
 Likely renamed to `server.version` before versioning.
 
+ - **Removed:** Yes, not available in ElectrumX.
+
 ---
 
 ### `numblocks.subscribe`
 
-LIkely renamed to `blockchain.numblocks.subscribe` before versioning.
+Likely renamed to `blockchain.numblocks.subscribe` before versioning.
+
+ - **Removed:** Yes, not available in ElectrumX.
 
 ---
 
@@ -127,7 +163,7 @@ A string, with a banner sentence of the server.
 
 | Introduced | Deprecated | Removed |
 | - | - | - |
-| Unversioned | N/A | N/A |
+| Unversioned | N/A | Yes, not available in ElectrumX. |
 
 #### Parameters
 
@@ -141,7 +177,7 @@ A integer.
 
 | Introduced | Deprecated | Removed |
 | - | - | - |
-| `0.8` or `0.9` | N/A | N/A |
+| `0.8` or `0.9` | N/A | Yes, not available in ElectrumX. |
 
 Renamed from `server.heapy`.
 
@@ -172,7 +208,7 @@ A string with an address of donation.
 
 | Introduced | Deprecated | Removed |
 | - | - | - |
-| `0.9` or `0.10` | N/A | N/A |
+| `0.9` or `0.10` | N/A | Yes, not available in ElectrumX. |
 
 #### Parameters
 
@@ -205,7 +241,7 @@ A string, the result value of the evalutated expression.
 
 | Introduced | Deprecated | Removed |
 | - | - | - |
-| Unversioned | N/A | N/A |
+| Unversioned | N/A | Yes, not available in ElectrumX. |
 
 #### Parameters
 
@@ -228,7 +264,7 @@ And later also:
 
 | Introduced | Deprecated | Removed |
 | - | - | - |
-| Unversioned | N/A | N/A |
+| Unversioned | N/A | Yes, not available in ElectrumX. |
 
 #### Parameters
 
@@ -242,7 +278,7 @@ An integer, some approximate of a queue size.
 
 | Introduced | Deprecated | Removed |
 | - | - | - |
-| ? | N/A | N/A |
+| ? | N/A | Yes, not available in ElectrumX. |
 
 TODO
 
@@ -270,7 +306,7 @@ An array with peers. Each array item is also an array, with the first element an
 
 | Introduced | Deprecated | Removed |
 | - | - | - |
-| Unversioned | N/A | N/A |
+| Unversioned | N/A | Yes, not available in ElectrumX. |
 
 #### Parameters
 
@@ -300,7 +336,11 @@ A string confirming the server will be stopped.
  - For "Unversioned" and `0.1`, the result can be the string `ok`.
  - For `0.1` to `1.0`, the result can be a string with the protocol version code.
 
+---
+
 ### `transaction.broadcast`
+
+ - **Removed:** Yes, not available in ElectrumX.
 
 ## Versions
 
