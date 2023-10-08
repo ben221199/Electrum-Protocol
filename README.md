@@ -86,7 +86,11 @@ A string, the result value of the evalutated expression.
 | - | - | - |
 | `0.9` or `0.10` | N/A | N/A |
 
-TODO
+#### Parameters
+
+#### Result
+
+A string with an address of donation.
 
 ### `server.getpid`
 
@@ -94,7 +98,13 @@ TODO
 | - | - | - |
 | `0.9` or `0.10` | N/A | N/A |
 
-TODO
+#### Parameters
+
+None
+
+#### Result
+
+An integer, the Process ID of the server.
 
 ### `server.heapy`
 
