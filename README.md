@@ -22,6 +22,8 @@ All methods defined for the Electrum Protocol. The "(array only)" means that the
 
 ### `blockchain.address.get_path`
 
+### `blockchain.address.get_proof`
+
 ### `blockchain.address.listunspent`
 
 ### `blockchain.address.subscribe`
@@ -29,6 +31,8 @@ All methods defined for the Electrum Protocol. The "(array only)" means that the
 ### `blockchain.address.subscribe2`
 
 ### `blockchain.address.unsubscribe`
+
+### `blockchain.block.get_chunk`
 
 ### `blockchain.block.get_header`
 
@@ -42,11 +46,13 @@ All methods defined for the Electrum Protocol. The "(array only)" means that the
 | - | - | - | - |
 | `0` | `height` (array only) | Height of block. | See method. |
 
-### `blockchain.block.get_chunk`
+### `blockchain.estimatefee`
 
-### `blockchain.block.get_header`
+### `blockchain.headers.subscribe`
 
 ### `blockchain.numblocks.subscribe`
+
+### `blockchain.relayfee`
 
 ### `blockchain.transaction.broadcast`
 
@@ -65,6 +71,8 @@ All methods defined for the Electrum Protocol. The "(array only)" means that the
 | `0` | `tx_hash` (array only) | Hash of transaction. | See method. |
 | `1` | ... | ... |
 
+### `blockchain.utxo.get_address`
+
 ---
 
 ### `blockchain2.address.get_history`
@@ -76,6 +84,8 @@ All methods defined for the Electrum Protocol. The "(array only)" means that the
 ### `blockchain2.block.get_chunk`
 
 ### `blockchain2.block.get_header`
+
+### `blockchain2.headers.subscribe`
 
 ### `blockchain2.numblocks.subscribe`
 
