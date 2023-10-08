@@ -169,7 +169,15 @@ TODO
 | - | - | - |
 | Unversioned | N/A | N/A |
 
-TODO
+#### Parameters
+
+| Index (Array) | Name (Object) | Description | Introduced |
+| - | - | - | - |
+| `0` | `password` (array only) | Password of server admin. Optional if there is none. | See method. |
+
+#### Result
+
+A string confirming the server will be stopped.
 
 ### `server.version`
 
